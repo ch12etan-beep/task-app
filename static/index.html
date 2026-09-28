@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Task Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Task Manager</h1>
+
+    <section class="card">
+      <h2>Who are you?</h2>
+      <div class="row">
+        <select id="user-select"></select>
+      </div>
+      <div class="row">
+        <input id="new-user" placeholder="New user name">
+        <button id="add-user">Create user</button>
+      </div>
+    </section>
+
+    <section class="card" id="tasks-section" hidden>
+      <h2>Your tasks</h2>
+      <div class="row">
+        <input id="new-task" placeholder="What needs doing?">
+        <button id="add-task">Add task</button>
+      </div>
+      <ul id="task-list"></ul>
+      <p id="empty" hidden>No tasks yet. Add your first one above.</p>
+    </section>
+
+    <p id="error" role="alert"></p>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
